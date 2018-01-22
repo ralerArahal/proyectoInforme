@@ -24,6 +24,7 @@ public class TestJasperReport {
 			InputStream jasper = JRLoader.getLocationInputStream("reports/mainReport.jasper");
 			JasperReport jasperReport = (JasperReport) JRLoader.loadObject(jasper);
 			JasperReport jasperReport2 = (JasperReport) JRLoader.loadObject(jasper);
+			JasperReport jasperReport2 = (JasperReport) JRLoader.loadObject(jasper);
 			Document document;
 			document = JRXmlUtils.parse(JRLoader.getLocationInputStream("datasource/DataSourcePROA.xml"));
 			
