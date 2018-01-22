@@ -25,7 +25,9 @@ public class TestJasperReport {
 			JasperReport jasperReport = (JasperReport) JRLoader.loadObject(jasper);
 			JasperReport jasperReportAux = (JasperReport) JRLoader.loadObject(jasper);
 			Document document;
-			//eliminado
+			document = JRXmlUtils.parse(JRLoader.getLocationInputStream("datasource/DataSourcePROA.xml"));
+			document = JRXmlUtils.parse(JRLoader.getLocationInputStream("datasource/DataSourcePROA1.xml"));
+
 			
 			Map<String, Object> params = new HashMap<String, Object>();
 			params.put(JRXPathQueryExecuterFactory.PARAMETER_XML_DATA_DOCUMENT, document);
