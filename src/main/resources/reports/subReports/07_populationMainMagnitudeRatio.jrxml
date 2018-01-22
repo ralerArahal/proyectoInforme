@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relevantClientInformationSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="c4ba3a6c-1d74-4994-97f5-72acd4fcc205">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset" uuid="07f9506d-07d2-4768-bbc6-2d82b32f26fc">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+		<queryString language="xPath">
+			<![CDATA[/proa/populationMainMagnitudeRatio/amounts/amount]]>
+		</queryString>
+		<field name="budget" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[budget]]></fieldDescription>
+		</field>
+		<field name="settlement" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[settlement]]></fieldDescription>
+		</field>
+		<field name="corrected" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[corrected]]></fieldDescription>
+		</field>
+		<field name="year3Amount" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[year3Amount]]></fieldDescription>
+		</field>
+		<field name="year4Amount" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[year4Amount]]></fieldDescription>
+		</field>
+		<field name="year5Amount" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[year5Amount]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="DatasetPer" uuid="07f9506d-07d2-4768-bbc6-2d82b32f26fc">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+		<queryString language="xPath">
+			<![CDATA[/proa/populationMainMagnitudeRatio/percentages/percentage]]>
+		</queryString>
+		<field name="budget" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[budget]]></fieldDescription>
+		</field>
+		<field name="settlement" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[settlement]]></fieldDescription>
+		</field>
+		<field name="corrected" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[corrected]]></fieldDescription>
+		</field>
+		<field name="year3Percentage" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[year3Percentage]]></fieldDescription>
+		</field>
+		<field name="year4Percentage" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[year4Percentage]]></fieldDescription>
+		</field>
+		<field name="year5Percentage" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[year5Percentage]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="xPath">
+		<![CDATA[/proa/populationMainMagnitudeRatio]]>
+	</queryString>
+	<field name="year1" class="java.lang.String">
+		<fieldDescription><![CDATA[year1]]></fieldDescription>
+	</field>
+	<field name="year2" class="java.lang.String">
+		<fieldDescription><![CDATA[year2]]></fieldDescription>
+	</field>
+	<field name="year3" class="java.lang.String">
+		<fieldDescription><![CDATA[year3]]></fieldDescription>
+	</field>
+	<field name="year4" class="java.lang.String">
+		<fieldDescription><![CDATA[year4]]></fieldDescription>
+	</field>
+	<field name="year5" class="java.lang.String">
+		<fieldDescription><![CDATA[year5]]></fieldDescription>
+	</field>
+	<field name="year1Population" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year1Population]]></fieldDescription>
+	</field>
+	<field name="year2Population" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year2Population]]></fieldDescription>
+	</field>
+	<field name="year3Population" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year3Population]]></fieldDescription>
+	</field>
+	<field name="year4Population" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year4Population]]></fieldDescription>
+	</field>
+	<field name="year5Population" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year5Population]]></fieldDescription>
+	</field>
+	<field name="year1Rate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year1Rate]]></fieldDescription>
+	</field>
+	<field name="year2Rate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year2Rate]]></fieldDescription>
+	</field>
+	<field name="year3Rate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year3Rate]]></fieldDescription>
+	</field>
+	<field name="year4Rate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year4Rate]]></fieldDescription>
+	</field>
+	<field name="year5Rate" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[year5Rate]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="252">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="30" width="190" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="b4881081-a947-445f-8fd3-abc43dd49a27">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.campo2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="190" y="30" width="60" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="b9fad03c-3010-4e35-8f1a-4c281c67292b">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.presupuesto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="250" y="30" width="60" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="40fe4ee9-354d-470f-8349-d4ac0edcfb50">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.liquidacion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="310" y="30" width="60" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="d88c82e3-89ad-4376-90ca-c21c25c3833d">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.corregido}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="370" y="20" width="60" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="c39191bd-aef9-413c-95c7-ce269bbf1872">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="40" width="190" height="9" uuid="d2633508-3ed1-4bb1-b717-756c64a58970">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.ingresosCorrientes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="49" width="190" height="9" uuid="c51292d7-236d-4edd-8f0b-fd8d2144d51f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.gastosCorrientes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="20" width="190" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="92663b02-86e1-45b1-a6cc-261820f44d8b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.magnitudesYRatios}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="190" y="20" width="60" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="7cac480f-cbe4-422e-8dc0-23ec41ab0f37">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="58" width="190" height="9" uuid="0f07b52e-01d5-4d3a-a10f-cc12f951f69c">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.GastosDeCapital}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="67" width="190" height="9" uuid="5fd49215-919e-47ee-980c-7b7663eabdf9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.variacionNeta}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="76" width="190" height="9" uuid="f080cd86-a6c5-40d5-a60b-95ead4e4d9a9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.ahorroBruto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="85" width="190" height="9" uuid="06232857-a6f3-41c7-90dc-55d572cddf9d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.ahorroNeto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="94" width="190" height="9" uuid="d0a27720-5a17-4464-89bb-3f1792b24da4">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.ahorroNetoLegal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="121" width="190" height="9" uuid="e281cedd-d714-4a99-954e-65f1f8dc3b0b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.remanenteDeTesoreria}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="112" width="190" height="9" uuid="439bb8c0-2c18-4a51-a93d-b383c17a944e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.capacidadNecesidad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="130" width="190" height="9" uuid="58e559e1-8664-4554-8827-ecbbd9e42cd5">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.deudaSEC}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="103" width="190" height="9" uuid="f8cffcd7-adc8-4bdc-9629-43f8ec46ffd1">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.saldoPresupuestario}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="490" y="20" width="60" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="212751d6-993c-4239-b7dc-ea7b6462e7fe">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="20" width="60" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="2004f67e-d43a-47fd-be62-d5ef8457a8e0">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="250" y="20" width="120" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="0130890e-7977-4699-a68d-f876ac62673e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year2}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="190" y="40" width="360" height="99" uuid="369a36c2-6f65-4c06-8590-9b95261a565a">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset" uuid="d325ff1a-e6ec-42e9-8530-9cf2df9a9a73">
+						<datasetParameter name="XML_DATA_DOCUMENT">
+							<datasetParameterExpression><![CDATA[$P{XML_DATA_DOCUMENT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_FILE">
+							<datasetParameterExpression><![CDATA[$P{XML_FILE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.xml.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.xml.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_DATE_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_DATE_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_NUMBER_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{XML_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{XML_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/populationMainMagnitudeRatio/amounts/amount")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="60" uuid="02769a01-2fba-4e6c-99b8-d23f797143b6">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="b534e825-c3e2-4398-8e29-fd1c91d0fffb">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{budget}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="f8dc584b-ba74-4cda-b068-e156d9292452">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="36525db2-958c-482a-a405-1034fba9eb3e"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{settlement}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="825ed9f3-454e-4400-99d0-adea1fc688ca">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="8a2380ed-4d45-4d82-ba63-106f0458a7b7"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{corrected}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="ccffe040-2118-4d8b-a16f-94f22c780b1b">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="8cf9d1ab-5c63-46f5-9be7-bb05fc3e2c0e"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{year3Amount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="29818d22-d13f-40c8-bfe6-f3c6312eec7f">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="365e6eae-b1c6-4634-b9df-084cf5929993"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{year4Amount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="a97facfb-9f8f-41b3-9df3-5aeb8f8d20ee">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="a742ffe5-0a3e-4e14-8c2e-f04ab3561a5c"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{year5Amount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="212" width="190" height="9" uuid="8e75b7ef-1c5c-4cd1-9f1f-fa1018cb9ef1">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.cargaFinanciera}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="176" width="190" height="9" uuid="d034cd71-fc3c-4255-8e35-fca88a011607">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.pendienteDeCobro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="149" width="190" height="9" uuid="d6e5b8e0-4c8e-40f1-a559-b4cf7aeafb5f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.ahorroNetoIngresosCorrientes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="158" width="190" height="9" uuid="501af349-2642-48c0-9236-59afe02e19b5">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.capacidadNecesidadSECINF}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="185" width="190" height="9" uuid="95ba78ed-476f-425c-90da-a944e87f7b91">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.periodoDePago}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="203" width="190" height="9" uuid="897139f3-4b39-47b8-986a-2849b37d3313">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.remanenteDetesoreria}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="167" width="190" height="9" uuid="7645e110-8cfc-4ce0-9d8d-3d7b4164763e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.deudaTotalSEC}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="194" width="190" height="9" uuid="1142b55f-5544-4981-a37a-f0cb59f3ace6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.periodoMedioDePago}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="140" width="190" height="9" uuid="7555ac16-cefa-4f00-84e1-501d528f13e7">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.magnituredYRatios.ahorroBrutoIngresosCorrientes}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="190" y="140" width="360" height="81" uuid="c91f842a-805d-459c-831a-642fee4dcd61">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="DatasetPer" uuid="1dda51c0-9414-4f24-bde7-ea853cc0d489">
+						<datasetParameter name="XML_DATA_DOCUMENT">
+							<datasetParameterExpression><![CDATA[$P{XML_DATA_DOCUMENT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_FILE">
+							<datasetParameterExpression><![CDATA[$P{XML_FILE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.xml.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.xml.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_DATE_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_DATE_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_NUMBER_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{XML_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{XML_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/populationMainMagnitudeRatio/percentages/percentage")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="60" uuid="6f31a168-2c48-4707-a301-9c1b91c3afaa">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="6bdbc0ee-7d39-4036-93dd-68436aefd887">
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $F{budget} ? new java.text.DecimalFormat("#,##0.##").format($F{budget}) + "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="4546c7ba-ed93-47a6-b664-f03fe653bc5c">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="4031e662-db91-4bb8-ab70-301d3e9dcc75"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $F{settlement} ? new java.text.DecimalFormat("#,##0.##").format($F{settlement}) + "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="2de5ec46-d638-4fc1-bac0-e4fcb874f30c">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="dbd9e48f-b7f7-42cd-b123-0e1eade90c94"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $F{corrected} ? new java.text.DecimalFormat("#,##0.##").format($F{corrected})+ "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="8d1875df-aae7-49ec-bab8-6828fae9a6b7">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="d6c9fb5c-7fb2-4f3f-bb27-0e0440ac0d1e"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $F{year3Percentage} ? new java.text.DecimalFormat("#,##0.##").format($F{year3Percentage}) + "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="c29134fc-300a-4387-b8b9-c10b01e39459">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="a30328a6-4d10-4a80-b963-f74507c18a5e"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $F{year4Percentage} ? new java.text.DecimalFormat("#,##0.##").format($F{year4Percentage}) + "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="5fbd7c1d-1d8a-4a9c-9cea-825ed30734f0">
+						<jr:detailCell style="Table_TD" height="9">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="60" height="9" uuid="f141633b-2017-403d-8d54-858ccea3db01"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $F{year5Percentage} ? new java.text.DecimalFormat("#,##0.##").format($F{year5Percentage}) + "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="11" y="0" width="230" height="20" uuid="2de37867-cf2d-4dd6-a4b5-7a7edb9fdb53">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.poblacionMagnitudes.titulo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="15" width="545" height="1" uuid="3a41215c-84a9-44af-ae57-34495dc21c4c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="139" width="550" height="1" uuid="06323954-927c-4c43-93b6-271eb7102c3d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="250" y="221" width="120" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="f1fee369-f4f9-454c-bf65-87232ecab2c5">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year2Population}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="221" width="190" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="5bb65de3-7ff7-43b2-823e-b5d913a814e5">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.datosPresupuestario.poblacionCensada}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="190" y="231" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="8b39b9c6-eb07-42b0-ae77-8302e40a5f16">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{year1Rate} ? new java.text.DecimalFormat("#,##0.##").format($F{year1Rate}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="231" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="cd1e6c38-a749-4a45-b858-83feb10d0fbb">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{year4Rate} ? new java.text.DecimalFormat("#,##0.##").format($F{year4Rate}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="490" y="231" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="cfc91e56-1ad3-491d-a4d3-d96302ec557f">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{year5Rate} ? new java.text.DecimalFormat("#,##0.##").format($F{year5Rate}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="430" y="221" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="6d43a7d6-caef-4ab1-b297-d4fa35aafd0b">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year4Population}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="370" y="221" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="b38622a6-7c88-4eea-ac0d-d055dd67f26f">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year3Population}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="250" y="231" width="120" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="b88338a1-f6d7-49b3-9f70-593a5ceb9b06">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{year2Rate} ? new java.text.DecimalFormat("#,##0.##").format($F{year2Rate}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="190" y="221" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="c1b09114-69a2-4d6e-ae86-ad59fcf7501d">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year1Population}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="231" width="190" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="d5559576-af93-4789-bd5d-b2844a0dd041">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.datosPresupuestario.tasaParo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="490" y="221" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="e6470c69-46f8-4051-90e7-3a355809293c">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{year5Population}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="370" y="231" width="60" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="a2a1fdb9-b2aa-4fac-a8c5-7453cecbb81e">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{year3Rate} ? new java.text.DecimalFormat("#,##0.##").format($F{year3Rate}) + "%" : ""]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

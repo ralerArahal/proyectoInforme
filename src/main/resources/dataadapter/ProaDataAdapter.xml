@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xmlDataAdapter class="net.sf.jasperreports.data.xml.XmlDataAdapterImpl">
+	<name>ProaDataAdapter</name>
+	<dataFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="repositoryDataLocation">
+		<location>src\main\resources\datasource\DataSourcePROA.xml</location>
+	</dataFile>
+	<useConnection>true</useConnection>
+	<namespaceAware>false</namespaceAware>
+	<datePattern>dd/MM/yyyy</datePattern>
+	<selectExpression>/proa</selectExpression>
+	<locale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">es_CL</locale>
+	<timeZone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://java.sun.com" xsi:type="java:java.lang.String">America/Santiago</timeZone>
+</xmlDataAdapter>

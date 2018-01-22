@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relevantClientInformationSubReport" pageWidth="15" pageHeight="15" columnWidth="15" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="c4ba3a6c-1d74-4994-97f5-72acd4fcc205">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<parameter name="className" class="java.lang.String"/>
+	<queryString language="xPath">
+		<![CDATA[/proa/relevantTracingInformation]]>
+	</queryString>
+	<detail>
+		<band height="15">
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("arrowDown")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_down.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("arrowUp")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_up.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("redBlade")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/red_blade.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("arrowRight")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_equal.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("withoutArrow")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_alert_grey_empty.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("redCircleWithExclamationMark")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_alert.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("greenCircleWithoutExclamationMark")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_alert_green_empty.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("greenTick")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/green_tick.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("whiteCircleWithoutExclamationMark")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_alert_grey_empty.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("whiteCircleWithExclamationMark")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_alert_grey.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("yellowButton")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_centre_yellow.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("redButton")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_centre.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="0" width="15" height="15" uuid="21a1e058-eed4-4365-ac9a-10bec3743c32">
+					<printWhenExpression><![CDATA[(new Boolean($P{className}.matches("greenButton")) ? Boolean.TRUE : Boolean.FALSE)]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["images/cir_centre_green.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

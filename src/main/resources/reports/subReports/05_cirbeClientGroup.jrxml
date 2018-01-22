@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relevantClientInformationSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="c4ba3a6c-1d74-4994-97f5-72acd4fcc205">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<queryString language="xPath">
+		<![CDATA[/proa/cirbeClientAndGroup]]>
+	</queryString>
+	<field name="clientLimit" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[client/limit]]></fieldDescription>
+	</field>
+	<field name="clientDisposed" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[client/disposed]]></fieldDescription>
+	</field>
+	<field name="groupLimit" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[group/limit]]></fieldDescription>
+	</field>
+	<field name="groupDisposed" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[group/disposed]]></fieldDescription>
+	</field>
+	<field name="limDate" class="java.util.Date">
+		<fieldDescription><![CDATA[limDate]]></fieldDescription>
+	</field>
+	<field name="dptoDate" class="java.util.Date">
+		<fieldDescription><![CDATA[dptoDate]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="70">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="20" width="60" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="b4881081-a947-445f-8fd3-abc43dd49a27">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.clienteYGrupo.titulo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement x="60" y="40" width="60" height="9" uuid="d8885514-71ac-4493-a91d-e0414ec306af">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{clientLimit} ? new java.text.DecimalFormat("#,##0.##").format($F{clientLimit}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="60" y="20" width="60" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="b9fad03c-3010-4e35-8f1a-4c281c67292b">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.clienteYGrupo.lim} + "\n" +  new SimpleDateFormat("dd/MM/yyyy").format($F{limDate})]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="120" y="20" width="60" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="40fe4ee9-354d-470f-8349-d4ac0edcfb50">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.clienteYGrupo.dpto} + "\n"+ new SimpleDateFormat("dd/MM/yyyy").format($F{dptoDate})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="40" width="60" height="9" uuid="d2633508-3ed1-4bb1-b717-756c64a58970">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.clienteYGrupo.cliente}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="49" width="60" height="9" uuid="c51292d7-236d-4edd-8f0b-fd8d2144d51f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="0">
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.clienteYGrupo.grupo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement x="60" y="49" width="60" height="9" uuid="2ad3934a-57d9-425b-bbd9-db529f9e5f36">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{groupLimit} ? new java.text.DecimalFormat("#,##0.##").format($F{groupLimit}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement x="120" y="40" width="60" height="9" uuid="dead6e20-077f-4acb-bb8c-98f6a383e210">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{clientDisposed} ? new java.text.DecimalFormat("#,##0.##").format($F{clientDisposed}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.###" isBlankWhenNull="true">
+				<reportElement x="120" y="49" width="60" height="9" uuid="df236b78-6836-4760-9818-662d15a64486">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.3"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[null != $F{groupDisposed} ? new java.text.DecimalFormat("#,##0.##").format($F{groupDisposed}) + "%" : ""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="11" y="0" width="230" height="20" uuid="3771d96b-ac59-494b-be2d-334f42b2d88f">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbeClientGroup.titulo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="15" width="180" height="1" uuid="f162db41-d685-402c-90f4-8c39607a10eb">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

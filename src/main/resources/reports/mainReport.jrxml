@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="proaReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="0e4184ea-a1be-483a-bcda-2e06c1639864">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\main\resources\dataadapter\ProaDataAdapter.xml"/>
+	<queryString language="xPath">
+		<![CDATA[/proa]]>
+	</queryString>
+	<field name="positions_table" class="java.lang.String">
+		<fieldDescription><![CDATA[positions/active/position]]></fieldDescription>
+	</field>
+	<field name="proa" class="java.lang.String">
+		<fieldDescription><![CDATA[proa]]></fieldDescription>
+	</field>
+	<background>
+		<band height="578" splitType="Stretch">
+			<textField evaluationTime="Page">
+				<reportElement x="-8" y="30" width="8" height="548" uuid="0ffa93a6-0f3d-4514-b870-adc3d60688b3">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement rotation="Left">
+					<font fontName="Times New Roman" size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Banco Santander, S.A. - Domicilio Social: Paseo de Pereda, 9-12. 39004 SANTANDER - R.M. de Santander, Hoja 286, Folio 64, Libro 5º de Sociedades, Inscripción 1ª. C.I.F.A-39000013"]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<subreport>
+				<reportElement positionType="Float" x="-20" y="10" width="595" height="40" uuid="6b837051-0f04-4f1b-84f0-4d7f3cb2a763"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/header")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/01_headerSubReport.jasper"]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement x="-13" y="5" width="580" height="1" uuid="1c465129-f5d8-47a3-8d48-027e3663cab4"/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="190" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="0" width="587" height="29" uuid="f677c4a4-30af-4827-b047-25d4da6c80fa"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/relevantClientInformation")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/02_relevantClientInformationSubReport.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="29" width="587" height="40" uuid="5e733995-b44e-4954-b552-9213bd54fb62"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/profitabilities")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/03_proftability.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="69" width="352" height="29" uuid="33502a31-f8ba-4915-8a08-afef2b231a70"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/relevantTracingInformation")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/04_relevantTracingInfo.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="357" y="69" width="197" height="29" uuid="bd07fccb-5cca-4dda-bc54-3835e568a911"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/cirbeClientAndGroup")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/05_cirbeClientGroup.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="98" width="587" height="40" uuid="124fa119-b6ce-47bc-b1c6-151ebffa32d7"/>
+				<subreportParameter name="positions_table">
+					<subreportParameterExpression><![CDATA[$F{positions_table}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("//positions")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/06_position.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="138" width="587" height="40" uuid="eb80d035-3af7-4040-88de-17cd65df8460"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/populationMainMagnitudeRatio")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/07_populationMainMagnitudeRatio.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="471">
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="0" width="587" height="40" uuid="faec023b-db1f-4f92-9cad-7e3a17f962ad"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/synthesisAndOpinionPolitic")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/08_synthesisAndOpinionPoliticA.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-12" y="40" width="587" height="40" uuid="f63a47cc-da7c-4886-bef2-5252b591e5b8"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/synthesisAndOpinionPolitic")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/08_synthesisAndOpinionPoliticB.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-12" y="80" width="587" height="40" uuid="02e9ef32-d54a-497e-9f92-4857adab71b5"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/synthesisAndOpinionPolitic")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/08_synthesisAndOpinionPoliticC.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="120" width="587" height="40" uuid="7b09181c-5f50-4d56-9266-9efbf118581a"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/governability")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/09_governabilityA.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="160" width="587" height="40" uuid="3f5b9d5b-210e-47e2-9ccd-1bd49e6fb3ad"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/governability")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/09_governabilityB.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="200" width="587" height="40" uuid="2c3f94a9-022b-46de-bd0d-489deccf6986"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/governability/comments")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/09_governabilityC.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="240" width="587" height="40" uuid="d7a3f6f4-264f-41b9-8372-b9b25ea4913e"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/financialDebt/bankPool")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/10_financialDebtA.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="320" width="587" height="40" uuid="b9357a54-fbd2-41ad-954f-f9c30744d2d6"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/populationMainMagnitudeRatio")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/11_budgetaryDataA.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="280" width="587" height="40" uuid="56694b6c-5dac-4ce3-9e3a-fa11f284a157"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/financialDebt/cirbe")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/10_financialDebtB.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="360" width="587" height="40" uuid="18765251-f703-4f99-9c95-290aa6edce21"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/synthesisAndOpinionPolitic")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/11_budgetaryDataB.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="207">
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="41" width="587" height="40" uuid="4207bb43-94be-42f5-a231-c2718ac894b6"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/ratingData")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/12_ratingDataRealA.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="81" width="587" height="40" uuid="e0877af4-71f5-49f9-bf41-f0b365bb231c"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/ratingData")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/12_ratingDataRealB.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="121" width="587" height="40" uuid="7c0c442f-78a1-48c9-9e88-38e5383f987a"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/ratingData")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/12_ratingDataRealC.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement positionType="Float" x="-13" y="1" width="587" height="40" uuid="a03e11be-35c5-4274-8a02-4aa77a3d2295"/>
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/retentionsAndIncomes")]]></dataSourceExpression>
+				<subreportExpression><![CDATA["reports/subReports/11_retentionsAndIncomes.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement positionType="Float" x="378" y="0" width="160" height="15" uuid="d24031ba-b834-4878-9a8d-a88cfbf30ba8">
+					<property name="local_mesure_unity" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.y" value="cm"/>
+					<property name="local_mesure_unitheight" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.Pag}+" " +$V{PAGE_NUMBER}+ " de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="538" y="0" width="30" height="15" uuid="de4ffc34-62cf-4737-94f8-fcb87909b994">
+					<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

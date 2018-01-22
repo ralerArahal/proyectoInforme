@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relevantClientInformationSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="c4ba3a6c-1d74-4994-97f5-72acd4fcc205">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Table_DH" mode="Opaque" backcolor="#D9D9D9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#808080">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset" uuid="a2d3cf70-0baa-434e-9ba4-4256cc0951ff">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+		<parameter name="totalQuantity" class="java.math.BigDecimal"/>
+		<parameter name="totalWeight" class="java.math.BigDecimal"/>
+		<queryString language="xPath">
+			<![CDATA[/proa/governability/composition/item]]>
+		</queryString>
+		<field name="desc" class="java.lang.String">
+			<fieldDescription><![CDATA[desc]]></fieldDescription>
+		</field>
+		<field name="quantity" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[quantity]]></fieldDescription>
+		</field>
+		<field name="weight" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[weight]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="xPath">
+		<![CDATA[/proa/governability/composition]]>
+	</queryString>
+	<field name="totalQuantity" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[totalQuantity]]></fieldDescription>
+	</field>
+	<field name="totalWeight" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[totalWeight]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="70">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<line>
+				<reportElement x="0" y="16" width="544" height="1" uuid="60c60a00-8ff5-4ab1-b0c6-8eedb30799b5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="1" width="230" height="20" uuid="0f28a6d7-1e96-4aee-a5e6-8a58b67c34f7">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.gobernabilidad.composicionPleno}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="102" y="30" width="350" height="30" uuid="3cb7ef76-20aa-4296-934c-fad8bd8f8962">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset" uuid="ea3f0a5e-b882-459a-8ef6-abcb52aa54cc">
+						<datasetParameter name="totalQuantity">
+							<datasetParameterExpression><![CDATA[$F{totalQuantity}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="totalWeight">
+							<datasetParameterExpression><![CDATA[$F{totalWeight}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/governability/composition/item")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="199" uuid="06e619a6-6307-4a84-b017-ab6a2882d217">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="10" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="199" height="10" forecolor="#FFFFFF" uuid="5c089de5-a171-4d51-ad11-bfe5645fb9f1"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.gobernabilidad.composicionPlenoTabla}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_DH" height="10" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="199" height="10" uuid="b01c84fb-00cc-4125-8e1c-6b24771fb218"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Left">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.gobernabilidad.total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<textField>
+								<reportElement x="0" y="0" width="199" height="10" uuid="8bed0784-ae71-44a0-9671-b571a5976279"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{desc}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="81" uuid="8ee8a9e0-ee17-49de-a17c-e1d413681d0c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="10" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="81" height="10" forecolor="#FFFFFF" uuid="9e7f0212-4370-4850-af47-edf55ee63ce7"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.gobernabilidad.nrConsejales}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_DH" height="10" rowSpan="1">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="81" height="10" uuid="989357d8-dc8f-45c7-863d-88df2d67ad0e"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{totalQuantity}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="81" height="10" uuid="104f819c-ba37-4870-b955-9529dde23beb"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="70" uuid="7be58274-5154-4860-9d14-08c9ac7f897c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="10" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="10" forecolor="#FFFFFF" uuid="a3e37d5f-391b-47ca-901f-b3ddbba757e0"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.gobernabilidad.peso}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_DH" height="10" rowSpan="1">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="70" height="10" uuid="685a8542-f92c-41a9-9abd-21587c56abed"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $P{totalWeight} ? new java.text.DecimalFormat("#,##0.##").format($P{totalWeight}) + "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="70" height="10" uuid="fd241a44-45dd-45e3-8d05-0abfd6aa7bc1"/>
+								<box leftPadding="2" rightPadding="2">
+									<pen lineWidth="0.5" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Right">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[null != $F{weight} ? new java.text.DecimalFormat("#,##0.##").format($F{weight}) + "%" : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</summary>
+</jasperReport>

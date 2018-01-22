@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proa>
+	<header>
+		<company>G.P.M. ARREDAMENTI ITALIA</company>
+		<reportDate>29/09/2017</reportDate>
+		<rating>
+			<import>1,0</import>
+			<date>12/12/2016</date>
+		</rating>
+	</header>
+    <relevantClientInformation>
+		<personNumber>J-137201</personNumber>
+        <territory>TERR.MADRID</territory>
+        <cnaeNumber>8411</cnaeNumber> 
+		<ccllType>AYUNDAMIENTO</ccllType> 
+		<nifCif>P2807900B</nifCif>
+		<zone>ZONA 1 EMPRESAS</zone>
+		<cnaeName>ACTIV. GRALES. DE LA ADMON. PUBLICA</cnaeName>
+		<municipalityMainActivity>CAPITAL CCAA: SERVICIOS</municipalityMainActivity>
+		<groupNumber>7839</groupNumber>
+		<office>O.E. SANTANDER PO. PEREDA 9</office>
+		<activSector>INSTITUCIONES PUBLICAS</activSector>
+		<businessManager>MARKUS CAMPOS MOLINA</businessManager> 
+		<groupName>ISBAN GROUP</groupName>
+		<officeType>EXISTE OFICINA RED SANTANDER</officeType>
+		<subSectorActiv>CORPORACION LOCAL</subSectorActiv>
+		<riskManager>MANUEL MONTIEL LUARTE</riskManager>	
+    </relevantClientInformation>
+	
+	<profitabilities>
+		<client>
+			<activeMargin>15</activeMargin>
+			<restMargin>535</restMargin>
+			<totalMargin>550</totalMargin>
+			<averageBalanceInvestment>2640</averageBalanceInvestment>
+			<roa>28,8</roa>
+			<rorac>24,7</rorac>
+			<provision>100</provision>
+			<totalMarginProvision>26,4</totalMarginProvision>
+		</client>
+		<group>
+			<activeMargin>1668</activeMargin>
+			<restMargin>948</restMargin>
+			<totalMargin>2615</totalMargin>
+			<averageBalanceInvestment>25236</averageBalanceInvestment>
+			<roa>10,4</roa>
+			<rorac>15,1</rorac>
+			<provision>1000</provision>
+			<totalMarginProvision>25,2</totalMarginProvision>
+		</group>
+	</profitabilities>
+	
+	<relevantTracingInformation>
+		<rating>
+			<value>3</value>
+			<date>09/12/2016</date>
+			<className>arrowDown</className>
+		</rating>
+		<score>
+			<value>3</value>
+			<className>yellowButton</className>
+		</score> 
+		<politic>
+			<value>REDUCIR</value>
+			<date>09/12/2016</date>
+			<className>redBlade</className>			
+		</politic>		
+		<gsiSituation>
+			<value>3</value>
+			<className>withoutArrow</className>
+		</gsiSituation>
+		<radar>
+			<value>MUY GRAVE</value>
+			<className>greenCircleWithoutExclamationMark</className>
+		</radar>
+		<vtoActionPlan>
+			<value>3</value>
+			<className>redButton</className>
+		</vtoActionPlan>
+    </relevantTracingInformation>
+	
+	<cirbeClientAndGroup>
+		<client>
+			<limit>29</limit> 
+			<disposed>17,3</disposed>
+		</client>
+		<group>
+			<limit>21</limit>
+			<disposed>14,35</disposed>
+		</group>
+		<limDate>22/12/2017</limDate>
+		<dptoDate>15/08/2017</dptoDate>
+    </cirbeClientAndGroup>
+
+	<positions>
+		<date>12/01/2017</date>
+		<active>
+			<position>
+				<activeClient>Riesgo comercial</activeClient>
+				<authorizedClient>50000</authorizedClient>
+				<formalizedClient>50000</formalizedClient>
+				<disposedClient>0</disposedClient>
+				<realGuaranteeClient>0</realGuaranteeClient>
+				<authorizedGroup>50000</authorizedGroup>
+				<formalizedGroup>50000</formalizedGroup>
+				<disposedGroup>0</disposedGroup>
+				<realGuaranteeGroup>0</realGuaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<activeClient>Riesgo Comex</activeClient>
+				<authorizedClient>50000</authorizedClient>
+				<formalizedClient>50000</formalizedClient>
+				<disposedClient>0</disposedClient>
+				<realGuaranteeClient>0</realGuaranteeClient>
+				<authorizedGroup>50000</authorizedGroup>
+				<formalizedGroup>50000</formalizedGroup>
+				<disposedGroup>0</disposedGroup>
+				<realGuaranteeGroup>0</realGuaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<activeClient>Riesgo Financiero</activeClient>
+				<authorizedClient>50000</authorizedClient>
+				<formalizedClient>50000</formalizedClient>
+				<disposedClient>0</disposedClient>
+				<realGuaranteeClient>0</realGuaranteeClient>
+				<authorizedGroup>50000</authorizedGroup>
+				<formalizedGroup>50000</formalizedGroup>
+				<disposedGroup>0</disposedGroup>
+				<realGuaranteeGroup>0</realGuaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<activeClient>Riesgo de Alaves</activeClient>
+				<authorizedClient>50000</authorizedClient>
+				<formalizedClient>50000</formalizedClient>
+				<disposedClient>0</disposedClient>
+				<realGuaranteeClient>0</realGuaranteeClient>
+				<authorizedGroup>50000</authorizedGroup>
+				<formalizedGroup>50000</formalizedGroup>
+				<disposedGroup>0</disposedGroup>
+				<realGuaranteeGroup>0</realGuaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<activeClient>Resto Riesgo Directo</activeClient>
+				<authorizedClient>50000</authorizedClient>
+				<formalizedClient>50000</formalizedClient>
+				<disposedClient>0</disposedClient>
+				<realGuaranteeClient>0</realGuaranteeClient>
+				<authorizedGroup>50000</authorizedGroup>
+				<formalizedGroup>50000</formalizedGroup>
+				<disposedGroup>0</disposedGroup>
+				<realGuaranteeGroup>0</realGuaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<activeClient>Total Riesgo Directo</activeClient>
+				<authorizedClient>7452040</authorizedClient>
+				<formalizedClient>4408940</formalizedClient>
+				<disposedClient>2358940</disposedClient>
+				<realGuaranteeClient>0</realGuaranteeClient>
+				<authorizedGroup>7452040</authorizedGroup>
+				<formalizedGroup>4408940</formalizedGroup>
+				<disposedGroup>2358940</disposedGroup>
+				<realGuaranteeGroup>0</realGuaranteeGroup>
+				<style>Subtotal</style>
+			</position>
+			<position>
+				<activeClient>TOTAL RIESGO</activeClient>
+				<authorizedClient>7452040</authorizedClient>
+				<formalizedClient>4408940</formalizedClient>
+				<disposedClient>2358940</disposedClient>
+				<realGuaranteeClient>0</realGuaranteeClient>
+				<authorizedGroup>7452040</authorizedGroup>
+				<formalizedGroup>4408940</formalizedGroup>
+				<disposedGroup>2358940</disposedGroup>
+				<realGuaranteeGroup>0</realGuaranteeGroup>
+				<style>Total</style>
+			</position>
+		</active>
+		<pasive>
+			<position>
+				<pasiveClient>Ctas. Visitas y depositos</pasiveClient>
+				<saClient>10000</saClient>
+				<smClient>10000</smClient>
+				<guaranteeClient>0</guaranteeClient>
+				<saGroup>10000</saGroup>
+				<smGroup>10000</smGroup>
+				<guaranteeGroup>0</guaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<pasiveClient>Valores y Fondos Inv.</pasiveClient>
+				<saClient>3252</saClient>
+				<smClient>4235</smClient>
+				<guaranteeClient>0</guaranteeClient>
+				<saGroup>3252</saGroup>
+				<smGroup>4235</smGroup>
+				<guaranteeGroup>0</guaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<pasiveClient>Seguros y P. Pensiones</pasiveClient>
+				<saClient>0</saClient>
+				<smClient>0</smClient>
+				<guaranteeClient>0</guaranteeClient>
+				<saGroup>0</saGroup>
+				<smGroup>0</smGroup>
+				<guaranteeGroup>0</guaranteeGroup>
+				<style>CampoNormal</style>
+			</position>
+			<position>
+				<pasiveClient>TOTAL PASIVO</pasiveClient>
+				<saClient>13252</saClient>
+				<smClient>14235</smClient>
+				<guaranteeClient>0</guaranteeClient>
+				<saGroup>13258</saGroup>
+				<smGroup>14235</smGroup>
+				<guaranteeGroup>0</guaranteeGroup>
+				<style>Total</style>
+			</position>
+		</pasive>
+	</positions>
+	
+	<populationMainMagnitudeRatio>
+		<year1>2015</year1>
+		<year2>2014</year2>
+		<year3>2013</year3>
+		<year4>2012</year4>
+		<year5>2011</year5>
+		<year1Population>97227</year1Population>
+		<year2Population>97292</year2Population>
+		<year3Population>97188</year3Population>
+		<year4Population>96722</year4Population>
+		<year5Population>96236</year5Population>
+		<year1Rate>15</year1Rate>
+		<year2Rate>16,2</year2Rate>
+		<year3Rate>16,8</year3Rate>
+		<year4Rate>17,3</year4Rate>
+		<year5Rate>17,4</year5Rate>
+		
+		<amounts>
+			<amount>
+				<desc>Ingresos corrientes</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Gastos corrientes</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Gastos de capital no financiero</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Variacion Neta de Deuda</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Ahorro Bruto</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Ahorro Neto</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Ahorro Neto Legal</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Saldo presupuestario no financiero</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Capacidad (+) Necesidades (-) de financiacion SEC</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Remanente de tesoreria</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>
+			<amount>
+				<desc>Deuda SEC</desc>
+				<budget>98489</budget>
+				<settlement>110412</settlement>
+				<corrected>110412</corrected>
+				<year3Amount>106907</year3Amount>
+				<year4Amount>105012</year4Amount>
+				<year5Amount>107059</year5Amount>
+			</amount>		
+		</amounts>
+		
+		<percentages>
+			<percentage>
+				<desc>Ahorro bruto / Ingresos corrientes</desc>
+				<budget>6,5</budget>
+				<settlement>10</settlement>
+				<corrected>2</corrected>
+				<year3Percentage>8</year3Percentage>
+				<year4Percentage>54</year4Percentage>
+				<year5Percentage>10</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Ahorro neto / Ingresos corrientes</desc>
+				<budget>25</budget>
+				<settlement>2</settlement>
+				<corrected>11</corrected>
+				<year3Percentage>7</year3Percentage>
+				<year4Percentage>15</year4Percentage>
+				<year5Percentage>19</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Capacidad (+) Necesidades (-) de financiacion SEC / INF SEC</desc>
+				<budget>36</budget>
+				<settlement>1,02</settlement>
+				<corrected>1,2</corrected>
+				<year3Percentage>10</year3Percentage>
+				<year4Percentage>12</year4Percentage>
+				<year5Percentage>59</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Deuda total SEC / Ingresos corrientes SEC</desc>
+				<budget>89</budget>
+				<settlement>1,2</settlement>
+				<corrected>11,42</corrected>
+				<year3Percentage>07</year3Percentage>
+				<year4Percentage>1</year4Percentage>
+				<year5Percentage>1,9</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Pendiente de cobro del ejercicio / Ingresos no financieros</desc>
+				<budget>87</budget>
+				<settlement>1,12</settlement>
+				<corrected>11,2</corrected>
+				<year3Percentage>1,7</year3Percentage>
+				<year4Percentage>12</year4Percentage>
+				<year5Percentage>15</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Periodo de pago (dias)</desc>
+				<budget>45</budget>
+				<settlement>11,12</settlement>
+				<corrected>11,2</corrected>
+				<year3Percentage>1,7</year3Percentage>
+				<year4Percentage>1,2</year4Percentage>
+				<year5Percentage>10,9</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Periodo medio de pago a proveedores legal (dias)</desc>
+				<budget>45</budget>
+				<settlement>17,2</settlement>
+				<corrected>12</corrected>
+				<year3Percentage>10,7</year3Percentage>
+				<year4Percentage>1,2</year4Percentage>
+				<year5Percentage>59</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Remanente de tesoreria / Ingresos corrientes</desc>
+				<budget>65</budget>
+				<settlement>12</settlement>
+				<corrected>1</corrected>
+				<year3Percentage>1,6</year3Percentage>
+				<year4Percentage>1,2</year4Percentage>
+				<year5Percentage>1,59</year5Percentage>
+			</percentage>
+			<percentage>
+				<desc>Carga financiera / Ingresos corrientes</desc>
+				<budget>25</budget>
+				<settlement>65,12</settlement>
+				<corrected>66,12</corrected>
+				<year3Percentage>17</year3Percentage>
+				<year4Percentage>1,12</year4Percentage>
+				<year5Percentage>5,9</year5Percentage>
+			</percentage>
+		</percentages>
+	</populationMainMagnitudeRatio>
+
+	<synthesisAndOpinionPolitic>
+		<synthesisAndOpinionAnalyst>Síntesis y opinión del analista de riesgos que tenga carterizada la firma.
+		
+Sociedad constituida en 1961, su actividad es la fabricación de conservas de pescado, principalmente de atún. Centrada en la fabricación de marca blanca (más del 90% de las ventas) a clientes como DIA, Carrefour o Alcampo, si bien también tiene marcas propias como Frinsa o Ribeira.
+
+Es la tercera conservara del país por ventas, tras los grupos Calvo y Jealsa.
+
+Propiedad al 100% de la familia Carregal-Varela (padre e hijo) tras diversas compras realizadas en 2010, 2011 y 2012 a accionistas minoritarios.
+
+Evolución muy positiva en los últimos años, generación de fondos holgada a pesar de ser un sector con márgenes escasos. Niveles de endeudamiento reducidos.
+
+Clasificado el 20/05/2016 con PCC de 37 mm euros que incluye principalmente líneas de circulante escasamente dispuestas.
+
+Amplio pool bancario con límites superiores a sus necesidades reales. Somos el primer banco del pool por límites con una cuota del 17%, si bien por saldos dispuestos nuestra cuota en cirbe está en torno al 10%.
+
+Sociedad con una evolución muy positiva en los últimos años, holgada generación de recursos y reducido endeudamiento. Cliente susceptible de incrementar riesgos, tanto a corto plazo como a largo plazo, que en la práctica no supone autorizar mayores límites a los actuales (PCC de 37 mm euros) sino aumentar las disposiciones de las líneas.
+		</synthesisAndOpinionAnalyst>
+		<synthesisAndOpinionOffice>Síntesis y opinión de los equipos de negocio de Instituciones
+		</synthesisAndOpinionOffice>
+		<RiskPolitics>Cliente con Política NORMAL
+		</RiskPolitics>
+	</synthesisAndOpinionPolitic>
+	
+	<governability>
+	
+		<government>
+			<item>
+				<desc>Alcalde/Presidente</desc>
+				<value>CiU</value>
+			</item>
+			<item>
+				<desc>Vice-Alcalde o 1er. Tte. De Alcalde</desc>
+				<value></value>
+			</item>
+			<item>
+				<desc>¿Existe alguna vinculación personal entre el equipo de gobierno, el interventor o el tesorero con Santander?</desc>
+				<value>No aplica, oficina de la Red Santander</value>
+			</item>
+		</government>
+
+		<composition>
+			<totalQuantity>23</totalQuantity>
+			<totalWeight>100</totalWeight>
+			<item>
+				<desc>Partido Popular</desc>
+				<quantity>2</quantity>
+				<weight>8,7</weight>
+			</item>
+			<item>
+				<desc>Partido Socialista Obrero Español</desc>
+				<quantity>3</quantity>
+				<weight>13</weight>
+			</item>
+			<item>
+				<desc>Cuidadanos</desc>
+				<quantity>3</quantity>
+				<weight>17,4</weight>
+			</item>
+			<item>
+				<desc>CIU</desc>
+				<quantity>5</quantity>
+				<weight>21,7</weight>
+			</item>
+			<item>
+				<desc>ERC</desc>
+				<quantity>4</quantity>
+				<weight>17,4</weight>
+			</item>
+			<item>
+				<desc>UP</desc>
+				<quantity>3</quantity>
+				<weight>13</weight>
+			</item>
+			<item>
+				<desc>Podemos</desc>
+				<quantity>2</quantity>
+				<weight>8,7</weight>
+			</item>
+		</composition>
+		
+		<comments>
+			<comment>Aquí el analista puede incorporar comentarios sobre la composición del pleno, cuándo se celebraron las últimas elecciones, la estabilidad del gobierno (posibles pactos y su estabilidad), etc. También se pueden hacer comentarios sobre la profesionalización de la corporación, así como la calidad de la información que elaboran.
+
+También se pueden hacer comentarios sobre la profesionalización de la corporación, así como la calidad de la información que elaboran
+			</comment>
+		</comments>
+	
+	</governability>
+	
+	<financialDebt>
+	
+		<bankPool>
+			<bankPoolDate>12/12/2015</bankPoolDate>
+			<entityTotal>TOTAL</entityTotal>
+			<commercialRoleTotal>56000</commercialRoleTotal>
+			<factoringTotal>10</factoringTotal>
+			<financialCPTotal>27000</financialCPTotal>
+			<confirmingTotal>280000</confirmingTotal>
+			<totalCPTotal>89000</totalCPTotal>
+			<financialLPTotal>2374</financialLPTotal>
+			<riskSignatureTotal>10</riskSignatureTotal>
+			<othersTotal>10</othersTotal>
+			<total>160374</total>
+			<percentageTotal>100</percentageTotal>
+			<textUnderTable>En este apartado de comentarios, al igual que en las empresas, el analista puede incorporar comentarios que ayuden a entender mejor el pool bancario (p.e. sobre la concentración o diversificación del mismo), variaciones en el mismo, disposiciones de las líneas, adecuación de los límites a las necesidades del cliente, etc. También, puede incorporar comentarios de la CIRBE y de sus variaciones.</textUnderTable>
+			<item>
+				<entity>SANTANDER</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>SABADELL</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>PASTOR</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>ABANCA</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>BANKIA</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>CAIXABANK</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>BBVA</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>CAIXA GERAL</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>BANKINTER</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>POPULAR</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>B.MARCH</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>NOVO BANCO</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>IBERCAJA</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>DEUTSCHE B.</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>S.GENERALE</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			<item>
+				<entity>Otros</entity>
+				<commercialRole>5000</commercialRole>
+				<factoring></factoring>
+				<financialCP>2000</financialCP>
+				<confirming>20000</confirming>
+				<totalCP>25000</totalCP>
+				<financialLP>2374</financialLP>
+				<riskSignature></riskSignature>
+				<others></others>
+				<total>25374</total>
+				<percentage>15,8</percentage>
+			</item>
+			
+		</bankPool>
+		
+		<cirbe>
+			<position>
+				<date>22/12/2016</date>
+				<item>
+					<position_desc>Santander</position_desc>
+					<discount>0</discount>
+					<limit>47</limit>
+					<daysLessYear>0</daysLessYear>
+					<daysMoreYear>2</daysMoreYear>
+					<total>100</total>
+					<percentage>85</percentage>	
+					<guarantee>1</guarantee>
+					<leasFactori>56</leasFactori>
+					<defaulter>54</defaulter>
+					<direct>7</direct>
+					<indirect>8</indirect>
+					<real>0</real>
+					<formal>0</formal>
+				</item>
+				<item>
+					<position_desc>Otros Bancos</position_desc>
+					<discount>0</discount>
+					<limit>47</limit>
+					<daysLessYear>0</daysLessYear>
+					<daysMoreYear>2</daysMoreYear>
+					<total>100</total>
+					<percentage>85</percentage>	
+					<guarantee>1</guarantee>
+					<leasFactori>56</leasFactori>
+					<defaulter>54</defaulter>
+					<direct>7</direct>
+					<indirect>8</indirect>
+					<real>0</real>
+					<formal>0</formal>
+				</item>
+				<item>
+					<position_desc>Total</position_desc>
+					<discount>0</discount>
+					<limit>47</limit>
+					<daysLessYear>0</daysLessYear>
+					<daysMoreYear>2</daysMoreYear>
+					<total>100</total>
+					<percentage>85</percentage>	
+					<guarantee>1</guarantee>
+					<leasFactori>56</leasFactori>
+					<defaulter>54</defaulter>
+					<direct>7</direct>
+					<indirect>8</indirect>
+					<real>0</real>
+					<formal>0</formal>
+				</item>	
+			</position>
+			<evolution>
+				<date>22/12/2016</date>
+				<item>
+					<evolution_date>31/08/2014</evolution_date>
+					<discount>0</discount>
+					<limit>47</limit>
+					<daysLessYear>0</daysLessYear>
+					<daysMoreYear>2</daysMoreYear>
+					<total>100</total>
+					<percentage>85</percentage>
+					<guarantee>1</guarantee>
+					<leasFactori>56</leasFactori>
+					<defaulter>54</defaulter>
+					<direct>7</direct>
+					<indirect>8</indirect>
+					<real>0</real>
+					<formal>0</formal>
+				</item>
+				<item>
+					<evolution_date>30/08/2014</evolution_date>
+					<discount>0</discount>
+					<limit>47</limit>
+					<daysLessYear>0</daysLessYear>
+					<daysMoreYear>2</daysMoreYear>
+					<total>100</total>
+					<percentage>85</percentage>
+					<guarantee>1</guarantee>
+					<leasFactori>56</leasFactori>
+					<defaulter>54</defaulter>
+					<direct>7</direct>
+					<indirect>8</indirect>
+					<real>0</real>
+					<formal>0</formal>
+				</item>
+				<item>
+					<evolution_date>01/09/2014</evolution_date>
+					<discount>0</discount>
+					<limit>47</limit>
+					<daysLessYear>0</daysLessYear>
+					<daysMoreYear>2</daysMoreYear>
+					<total>100</total>
+					<percentage>85</percentage>
+					<guarantee>1</guarantee>
+					<leasFactori>56</leasFactori>
+					<defaulter>54</defaulter>
+					<direct>7</direct>
+					<indirect>8</indirect>
+					<real>0</real>
+					<formal>0</formal>
+				</item>	
+			</evolution>
+		</cirbe>
+		
+	</financialDebt>
+	
+	<budgetaryData>
+		<populationMainMagnitudeRatio>
+			<year1>2015</year1>
+			<year2>2014</year2>
+			<year3>2013</year3>
+			<year4>2012</year4>
+			<year5>2011</year5>
+			<year1Population>97227</year1Population>
+			<year2Population>97292</year2Population>
+			<year3Population>97188</year3Population>
+			<year4Population>96722</year4Population>
+			<year5Population>96236</year5Population>
+			<year1Rate>15</year1Rate>
+			<year2Rate>16,2</year2Rate>
+			<year3Rate>16,8</year3Rate>
+			<year4Rate>17,3</year4Rate>
+			<year5Rate>17,4</year5Rate>
+			
+			<amounts>
+				<amount>
+					<desc>Ingresos corrientes</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Gastos corrientes</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Gastos de capital no financiero</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Variacion Neta de Deuda</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Ahorro Bruto</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Ahorro Neto</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Ahorro Neto Legal</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Saldo presupuestario no financiero</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Capacidad (+) Necesidades (-) de financiacion SEC</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Remanente de tesoreria</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>
+				<amount>
+					<desc>Deuda SEC</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Amount>106907</year3Amount>
+					<year4Amount>105012</year4Amount>
+					<year5Amount>107059</year5Amount>
+				</amount>		
+			</amounts>
+			
+			<percentages>
+				<percentage>
+					<desc>Ahorro bruto / Ingresos corrientes</desc>
+					<budget>6,5</budget>
+					<settlement>10</settlement>
+					<corrected>2</corrected>
+					<year3Percentage>8</year3Percentage>
+					<year4Percentage>54</year4Percentage>
+					<year5Percentage>10</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Ahorro neto / Ingresos corrientes</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Capacidad (+) Necesidades (-) de financiacion SEC / INF SEC</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Deuda total SEC / Ingresos corrientes SEC</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Pendiente de cobro del ejercicio / Ingresos no financieros</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Periodo de pago (dias)</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Periodo medio de pago a proveedores legal (dias)</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Remanente de tesoreria / Ingresos corrientes</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+				<percentage>
+					<desc>Carga financiera / Ingresos corrientes</desc>
+					<budget>98489</budget>
+					<settlement>110412</settlement>
+					<corrected>110412</corrected>
+					<year3Percentage>106907</year3Percentage>
+					<year4Percentage>105012</year4Percentage>
+					<year5Percentage>107059</year5Percentage>
+				</percentage>
+			</percentages>
+		</populationMainMagnitudeRatio>
+	
+	</budgetaryData>
+	<retentionsAndIncomes>
+		<item>
+			<desc>Retención relevante de la P.T.E./Diput. Foral</desc>
+			<value>No procede dado el tipo de entidad de la que se trata</value>
+		</item>
+		<item>
+			<desc>Método de recaudación</desc>
+			<value>Gestiona directamente la recaudación</value>
+		</item>	
+		<item>
+			<desc>Mes de recaudación del IBI en periodo voluntario</desc>
+			<value>No procede dado el tipo de ente del que se trata</value>
+		</item>
+		<item>
+			<desc>Mes de recaudación del IVTM en periodo voluntario</desc>
+			<value>No procede dado el tipo de ente del que se trata</value>
+		</item>
+		<item>
+			<desc>Mes de recaudación del IAE en periodo voluntario</desc>
+			<value>No procede dado el tipo de ente del que se trata</value>
+		</item>		
+	</retentionsAndIncomes>
+	
+	<ratingData>
+		<ratingInformation>
+			<ratingModel>Corporacion</ratingModel>
+			<date>04/04/2017</date>
+		</ratingInformation>
+		
+		<quantitativeValuationInformation>
+			<liquidationDate>06/04/2017</liquidationDate>
+			<automaticQuantitativeValuation>4,1</automaticQuantitativeValuation>
+			<correctedQuantitativeValuation>4,7</correctedQuantitativeValuation>
+		</quantitativeValuationInformation>
+		
+		<financialInformation>
+		
+			<item>
+				<quantitativeValuation>Deficit Ajustado</quantitativeValuation>
+				<desc>(Deficit corregido + Rem. Tes. ejecrcicio anterior) / INF</desc>
+				<automatic>0,5</automatic>
+				<corrected>-5,2</corrected>
+			</item>
+			<item>
+				<quantitativeValuation>Deuda Total</quantitativeValuation>
+				<desc>(Deuda a Largo Plazo + Deuda a Corto Plazo) / INF</desc>
+				<automatic>53,7</automatic>
+				<corrected>53,7</corrected>
+			</item>
+			<item>
+				<quantitativeValuation>Elasticidad presupuestaria</quantitativeValuation>
+				<desc>(Gastos Capitulo I + Gastos Capitulo IV) / Gastos Corrientes</desc>
+				<automatic>46</automatic>
+				<corrected>46</corrected>
+			</item>
+			<item>
+				<quantitativeValuation>Deuda CP</quantitativeValuation>
+				<desc>Deuda CP / IC</desc>
+				<automatic>0</automatic>
+				<corrected>0</corrected>
+			</item>
+			<item>
+				<quantitativeValuation>Pendiente de pago</quantitativeValuation>
+				<desc>Pte. Pago / ((Gastos Capitulo II, IV, VI, VII) + Ajuste 413)</desc>
+				<automatic>13</automatic>
+				<corrected>13</corrected>
+			</item>
+			<item>
+				<quantitativeValuation>Pendiente de cobro</quantitativeValuation>
+				<desc>Pte. / Ingesos Corrientes</desc>
+				<automatic>43</automatic>
+				<corrected>43</corrected>
+			</item>
+		</financialInformation>
+		
+		<automaticValuationInformation>
+			<automaticValuationAdjustment>-2</automaticValuationAdjustment>
+			<automaticValuation>3,7</automaticValuation>
+		</automaticValuationInformation>
+
+		<qualitativeValuationQuestionnaire>
+			
+			<item>
+				<question>Gobernabilidad</question>
+				<answer>No, pero gobierna con un pacto estable en coalicion</answer>
+			</item>
+			<item>
+				<question>Pago obligaciones tributarias y/o Seguridad Social</question>
+				<answer>No, pero gobierna con un pacto estable en coalicion</answer>
+			</item>
+			<item>
+				<question>Gobernabilidad</question>
+				<answer>No, pero gobierna con un pacto estable en coalicion</answer>
+			</item>
+			<item>
+				<question>Gobernabilidad</question>
+				<answer>No, pero gobierna con un pacto estable en coalicion</answer>
+			</item>
+			<item>
+				<question>Gobernabilidad</question>
+				<answer>No, pero gobierna con un pacto estable en coalicion</answer>
+			</item>
+			<item>
+				<question>Gobernabilidad</question>
+				<answer>No, pero gobierna con un pacto estable en coalicion</answer>
+			</item>
+			<item>
+				<question>Gobernabilidad</question>
+				<answer>No, pero gobierna con un pacto estable en coalicion</answer>
+			</item>
+			
+		</qualitativeValuationQuestionnaire>
+
+		<additionalAdjustmentsQuestionnaire>
+		
+			<item>
+				<question>Acceso al credito</question>
+				<answer>No tiene creditos por decision</answer>
+			</item>
+			<item>
+				<question>Tipo de entidad local</question>
+				<answer>Ayuntamientos</answer>
+			</item>
+		
+		</additionalAdjustmentsQuestionnaire>
+		
+		<automaticValuation>4,1</automaticValuation>
+		
+		<detailValuationOverridden>
+			<valuationOverridden>-2</valuationOverridden>
+			<comment>Valoración sobrescrita por Riesgo Cliente.</comment>
+		</detailValuationOverridden>
+	</ratingData>
+
+</proa>

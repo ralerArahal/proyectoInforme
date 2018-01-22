@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relevantClientInformationSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="c4ba3a6c-1d74-4994-97f5-72acd4fcc205">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset" uuid="fb2dedf1-a342-43b9-9a6f-a56ced007bd9">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+		<queryString language="xPath">
+			<![CDATA[/proa/ratingData/financialInformation/item]]>
+		</queryString>
+		<field name="quantitativeValuation_1" class="java.lang.String">
+			<fieldDescription><![CDATA[quantitativeValuation]]></fieldDescription>
+		</field>
+		<field name="desc_1" class="java.lang.String">
+			<fieldDescription><![CDATA[desc]]></fieldDescription>
+		</field>
+		<field name="automatic_1" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[automatic]]></fieldDescription>
+		</field>
+		<field name="corrected_1" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[corrected]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="xPath">
+		<![CDATA[/proa/ratingData]]>
+	</queryString>
+	<field name="totalQuantity" class="java.lang.String">
+		<fieldDescription><![CDATA[quantitativeValuationInformation/totalQuantity]]></fieldDescription>
+	</field>
+	<field name="correctedQuantitativeValuation" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[quantitativeValuationInformation/correctedQuantitativeValuation]]></fieldDescription>
+	</field>
+	<field name="automaticQuantitativeValuation" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[quantitativeValuationInformation/automaticQuantitativeValuation]]></fieldDescription>
+	</field>
+	<field name="date" class="java.util.Date">
+		<fieldDescription><![CDATA[quantitativeValuationInformation/liquidationDate]]></fieldDescription>
+	</field>
+	<field name="ratingModel" class="java.lang.String">
+		<fieldDescription><![CDATA[ratingInformation/ratingModel]]></fieldDescription>
+	</field>
+	<field name="dateRating" class="java.util.Date">
+		<fieldDescription><![CDATA[ratingInformation/date]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="110">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="10" y="30" width="533" height="10" backcolor="#D9D9D9" uuid="0f28a6d7-1e96-4aee-a5e6-8a58b67c34f7">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.titulos.infoValoracion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="160" y="40" width="233" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="9cefddc9-824a-4ca5-be29-c8abc4f2d1c8">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+					<topPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.infoValoracion.valoracionCuantAuto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="10" y="40" width="150" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="1d13e1d7-ff4a-4f9c-b508-3bde1e09af0f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+					<topPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.infoValoracion.fecha}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0##" isBlankWhenNull="true">
+				<reportElement x="160" y="50" width="233" height="10" uuid="44b15b78-f1bc-4fe8-9f4f-06103a156f35">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3"/>
+					<topPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{automaticQuantitativeValuation}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="10" y="50" width="150" height="10" uuid="8521cbab-dc9f-4b8e-a2ca-dd1236829629">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3"/>
+					<topPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="393" y="40" width="150" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="52612bd3-ea5a-4856-bf83-2fbb60210841">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+					<topPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.infoValoracion.valoracionCuantCorreg}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.0##" isBlankWhenNull="true">
+				<reportElement x="393" y="50" width="150" height="10" uuid="8f884ac5-40a2-4b83-894e-b0f936264926">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3"/>
+					<topPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.3" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{correctedQuantitativeValuation}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="160" y="70" width="233" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="8cb7af6d-0ee0-446b-b671-254432e1001a">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.infoFinanciera.desc}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="10" y="70" width="150" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="a7ebb706-7f94-4d87-839e-e9bec9f5d57d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.infoFinanciera.valoracionCuant}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="393" y="70" width="75" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="30da296c-14f9-4319-8e2c-f8dc18a5df85">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.infoFinanciera.automatica}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="10" y="80" width="533" height="20" uuid="bb12f480-2d58-402a-a777-09b3854958f5">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset" uuid="39dc1d09-515c-4852-b34e-1d11dcb2d971">
+						<datasetParameter name="XML_DATA_DOCUMENT">
+							<datasetParameterExpression><![CDATA[$P{XML_DATA_DOCUMENT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_FILE">
+							<datasetParameterExpression><![CDATA[$P{XML_FILE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.xml.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.xml.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_DATE_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_DATE_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_NUMBER_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{XML_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{XML_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/ratingData/financialInformation/item")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="150" uuid="a4e41e36-e992-4e78-9ecb-0c8227a8b4f2">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField>
+								<reportElement x="0" y="0" width="150" height="10" uuid="ef79690b-6452-4b54-9ae4-6e756d46d5fe"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement verticalAlignment="Middle">
+									<font size="7.5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{quantitativeValuation_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="233" uuid="5111df28-07e8-45ac-8b43-9ae76cf8110f">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField>
+								<reportElement x="0" y="0" width="233" height="10" uuid="04ce6fcc-f1b4-4c92-91da-86c744f063ed">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7.5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{desc_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="75" uuid="b93cf879-fb51-425e-b388-2a135cc0209a">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="75" height="10" uuid="ff19b2e4-6091-44bd-b114-42ebe9c95ecf">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+								</reportElement>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font size="7.5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{automatic_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="75" uuid="c5187b3a-c2c5-47ce-b216-783fbefd8977">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="75" height="10" uuid="d59e6117-83c8-48ee-92d7-c8ea9cf2a338"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle">
+									<font size="7.5"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{corrected_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="468" y="70" width="75" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="5fb449b8-03e1-481b-b4ce-5c4c555684d6">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.infoFinanciera.corregida}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="10" y="60" width="533" height="10" backcolor="#D9D9D9" uuid="e7a70a60-3840-47bc-85f8-5154edc5537d">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.titulos.infoFinanciera}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="10" y="9" width="150" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="26f2736c-0f3f-4e9b-9948-56b07618d08d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.titulos.datosRating}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="160" y="9" width="233" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="b4ad6304-e831-448e-a51e-7c805caf2708">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.titulos.modeloRating} + " "+ $F{ratingModel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="393" y="9" width="150" height="10" forecolor="#000000" backcolor="#FFFFFF" uuid="6da31d67-055e-4f9c-9274-6e658702b510">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<pen lineWidth="0.3" lineColor="#000000"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.rating.titulos.fecha} +" "+ new SimpleDateFormat("dd/MM/yyyy").format($F{dateRating})]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

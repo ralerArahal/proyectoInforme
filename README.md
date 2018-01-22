@@ -1,2 +1,0 @@
-proyectoInforme
-proyectoInforme2

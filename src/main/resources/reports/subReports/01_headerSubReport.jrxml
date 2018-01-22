@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cabeceraSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="90d0841a-3f45-4984-9453-5474e24eb980">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\main\resources\dataadapter\ProaDataAdapter.xml"/>
+	<queryString language="XPath">
+		<![CDATA[/proa/header]]>
+	</queryString>
+	<field name="nomPersona" class="java.lang.String">
+		<fieldDescription><![CDATA[company]]></fieldDescription>
+	</field>
+	<field name="reportDate" class="java.lang.String">
+		<fieldDescription><![CDATA[reportDate]]></fieldDescription>
+	</field>
+	<field name="import" class="java.lang.String">
+		<fieldDescription><![CDATA[rating/import]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[rating/date]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="60" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="cm"/>
+			<property name="com.jaspersoft.studio.unit.height" value="cm"/>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="34" width="120" height="11" uuid="c7e6e740-ff76-4f13-b9b3-91f896d03b05"/>
+				<textElement>
+					<font fontName="Arial" size="7.5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cabecera.textoLogo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="120" y="0" width="390" height="30" uuid="df1d20ad-537b-43fb-9408-825e25c70914">
+					<printWhenExpression><![CDATA[$F{nomPersona}.length() > 43]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomPersona}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="120" y="0" width="390" height="30" uuid="c5e2e595-f892-4132-b37e-1ff0d9791bdc">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[$F{nomPersona}.length() <= 43]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomPersona}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="280" y="30" width="230" height="11" uuid="1b76ddf5-a068-42c1-82c1-2de470e29c64"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Arial" size="7.5"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fecha del Informe: "
++(new java.text.SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date()))]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="120" height="34" uuid="55c55dfd-2077-4267-a725-36ba35421fdb"/>
+				<imageExpression><![CDATA["images/logo.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="514" y="0" width="6" height="50" backcolor="#EE161F" uuid="8cb6473e-af47-4be9-8a54-e287583f04b4">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#EE161F"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="###0.0###;(###0.0###-)" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="521" y="0" width="36" height="20" uuid="7529cd35-79c8-4f82-b1f3-1a9352e4b9fb">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<printWhenExpression><![CDATA[$F{nomPersona}.length() <= 43]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{import}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="521" y="22" width="36" height="11" uuid="e5e26668-6b26-40ce-89f3-4230c1ccf761"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="5.5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

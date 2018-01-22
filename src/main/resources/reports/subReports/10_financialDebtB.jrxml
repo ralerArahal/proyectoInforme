@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relevantClientInformationSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="c4ba3a6c-1d74-4994-97f5-72acd4fcc205">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="DatasetPosition" uuid="0fe60015-b7c9-481f-901d-23a93dd4e378">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+		<queryString language="xPath">
+			<![CDATA[/proa/financialDebt/cirbe/position/item]]>
+		</queryString>
+		<field name="position_desc" class="java.lang.String">
+			<fieldDescription><![CDATA[position_desc]]></fieldDescription>
+		</field>
+		<field name="discount" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[discount]]></fieldDescription>
+		</field>
+		<field name="limit" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[limit]]></fieldDescription>
+		</field>
+		<field name="daysLessYear" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[daysLessYear]]></fieldDescription>
+		</field>
+		<field name="daysMoreYear" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[daysMoreYear]]></fieldDescription>
+		</field>
+		<field name="total" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[total]]></fieldDescription>
+		</field>
+		<field name="percentage" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[percentage]]></fieldDescription>
+		</field>
+		<field name="guarantee" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[guarantee]]></fieldDescription>
+		</field>
+		<field name="leasFactori" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[leasFactori]]></fieldDescription>
+		</field>
+		<field name="defaulter" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[defaulter]]></fieldDescription>
+		</field>
+		<field name="direct" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[direct]]></fieldDescription>
+		</field>
+		<field name="indirect" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[indirect]]></fieldDescription>
+		</field>
+		<field name="real" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[real]]></fieldDescription>
+		</field>
+		<field name="formal" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[formal]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="DatasetEvolution" uuid="0fe60015-b7c9-481f-901d-23a93dd4e378">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+		<queryString language="xPath">
+			<![CDATA[/proa/financialDebt/cirbe/evolution/item]]>
+		</queryString>
+		<field name="evolution_date" class="java.util.Date">
+			<fieldDescription><![CDATA[evolution_date]]></fieldDescription>
+		</field>
+		<field name="discount" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[discount]]></fieldDescription>
+		</field>
+		<field name="limit" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[limit]]></fieldDescription>
+		</field>
+		<field name="daysLessYear" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[daysLessYear]]></fieldDescription>
+		</field>
+		<field name="daysMoreYear" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[daysMoreYear]]></fieldDescription>
+		</field>
+		<field name="total" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[total]]></fieldDescription>
+		</field>
+		<field name="percentage" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[percentage]]></fieldDescription>
+		</field>
+		<field name="guarantee" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[guarantee]]></fieldDescription>
+		</field>
+		<field name="leasFactori" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[leasFactori]]></fieldDescription>
+		</field>
+		<field name="defaulter" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[defaulter]]></fieldDescription>
+		</field>
+		<field name="direct" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[direct]]></fieldDescription>
+		</field>
+		<field name="indirect" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[indirect]]></fieldDescription>
+		</field>
+		<field name="real" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[real]]></fieldDescription>
+		</field>
+		<field name="formal" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[formal]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="xPath">
+		<![CDATA[/proa/financialDebt/cirbe]]>
+	</queryString>
+	<field name="date" class="java.util.Date">
+		<fieldDescription><![CDATA[position/date]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="190">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<line>
+				<reportElement x="0" y="16" width="544" height="1" uuid="60c60a00-8ff5-4ab1-b0c6-8eedb30799b5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="1" width="230" height="20" uuid="0f28a6d7-1e96-4aee-a5e6-8a58b67c34f7">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.titulo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="1" y="48" width="56" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="cb980ede-cec7-4483-866a-296d18746057">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.posicion}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1" y="31" width="284" height="10" uuid="b6b64967-6dc0-449d-aabe-288792e123ca"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.posicionCirbe1} + " ("+ new SimpleDateFormat("dd/MM/yyyy").format($F{date}) + ") " + $R{Report.PROA.cirbe.posicionCirbe2}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="1" y="90" width="551" height="10" uuid="187af561-b0a1-4191-a88c-e366e1a01fab">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="DatasetPosition" uuid="e6e2b6eb-aa92-4ed0-b1e3-6572403f8b04">
+						<datasetParameter name="XML_DATA_DOCUMENT">
+							<datasetParameterExpression><![CDATA[$P{XML_DATA_DOCUMENT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_FILE">
+							<datasetParameterExpression><![CDATA[$P{XML_FILE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.xml.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.xml.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_DATE_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_DATE_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_NUMBER_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{XML_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{XML_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/financialDebt/cirbe/position/item")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="56" uuid="2d367632-4686-4b4f-aa70-1e4ebf980a32">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="56" height="10" uuid="863a7b90-2a16-4c09-9035-a6105d302949"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{position_desc}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="af779c51-69cc-45c1-b22f-85e51ef6cb69">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="884b0276-08e5-4bb3-8202-e93df73adfb3">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{discount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="d332172e-bf0e-4637-a10a-a47a2225370d">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="59fbef29-6dee-4e65-a75c-e0976ce950ce"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{limit}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="f7ff1211-4549-4d47-b6a9-589539c11796">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="9dc6d27f-6883-46af-ab52-001a1ead63a7"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{daysLessYear}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="f666e883-c300-4706-b77c-79b0ac75ef8b">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="94ded869-4b9f-4a82-99b4-d4d7607cedee"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{daysMoreYear}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="86c5cf44-c287-43da-85ed-1345da7611f6">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="5f8fa792-0d95-4583-a8d5-7969eab40b29"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="f3e93436-8b3a-4105-95ce-7cecc98efd5a">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="69457aeb-578f-438e-838c-ee41dd45f9e1"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{percentage}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="bdd51871-e6cb-4149-b8c1-4236b8cbf5f0">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="f7dfda63-5a40-423c-b7b0-017f9ab7fa4b"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{guarantee}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="3ec3248a-c77f-4e58-8c7d-23aa5f58ffe8">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="9d77770e-370b-40ea-a808-f96427e91ebf"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{leasFactori}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="d58435f2-4141-4081-befd-b62c1a1b4ce2">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="25afc10c-0c08-46ca-9eeb-20a1dced10ad"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{defaulter}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="5bafc5c8-0723-441a-b92b-d569decac6a4">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="4e019157-c570-4b5a-82a1-6d9e78cc093e"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{direct}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="4e67b033-bb3d-401a-a3e8-29179ae3ab96">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="ee81d8db-259a-4f82-a9db-6aa97241a68e"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{indirect}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="0dd9f805-c5f7-4e35-9d1b-16b9b8641253">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="e9009a3b-9d84-4b5c-a5cb-c05c8016c6bd"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{real}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="dfbab1f7-5145-44ea-bfa3-25707d65682c">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="2b704684-0675-48cf-853f-1bde4f2d3478"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{formal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="1" y="68" width="56" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="238d0f03-9a3f-4227-bd24-d59999ae4ae8">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="57" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="c26b43a4-6db2-4e25-83b2-fb9dbfc616e9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="57" y="48" width="38" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="55ea4eb2-c4bc-4a19-b737-2217b1bcac9d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.dscto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="95" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="8f3d3f5d-91cf-49b9-a4e3-65ae26f3e176">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.limite}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="133" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="c0d78500-cfa4-4812-87be-a1525c72af26">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.disMenor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="171" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="27beec99-2b38-44fc-afa8-bf992422982b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.dismayor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="209" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="1d90a54d-66a3-46a5-acd0-b4c846eee505">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.total}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="247" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="0213737d-f5f8-48b4-ae9c-554a3e675bda">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.util}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="285" y="48" width="38" height="42" forecolor="#FFFFFF" backcolor="#808080" uuid="9a0146b5-d85a-4a65-8198-6bca85e6ac37">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.avales}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="95" y="48" width="190" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="c92dd2dd-7460-40db-88d8-e6151ccdd5bf">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.creditosYprestamos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="323" y="48" width="38" height="42" forecolor="#FFFFFF" backcolor="#808080" uuid="ef65d8eb-f307-48e2-9916-aaeca8c11d0a">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.leas}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="361" y="48" width="38" height="42" forecolor="#FFFFFF" backcolor="#808080" uuid="71e75fb8-8089-4ce9-a925-2eac2a64c3a0">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.moroso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="399" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="a2e6116e-3e1e-4dca-8384-d128b84efd69">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.directo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="437" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="0b133331-3eb7-44b5-a544-672969df7d47">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.indirecto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="475" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="361f7191-478e-418a-8c65-6ffa22696fd6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.real}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="513" y="68" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="34b416f1-f10e-4bee-9e0a-ecf1d31cd4ed">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.formal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="399" y="48" width="76" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="8fae934b-57a7-4967-91db-7e8a2602c56b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.riesgo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="475" y="48" width="76" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="046c4105-a6e3-46f9-a37c-203994bfdf38">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.garantia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="1" y="130" width="56" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="9ca5a0f9-d676-47ba-98f9-c86abccd365e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.evolucion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="1" y="114" width="284" height="10" uuid="5c7f4b48-94f9-4930-b539-094ea7855312"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.evolucionCirbe1}  + " ("+ new SimpleDateFormat("dd/MM/yyyy").format($F{date}) + ") " + $R{Report.PROA.cirbe.posicionCirbe2}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" x="1" y="172" width="551" height="10" uuid="d0b83c9a-d5dd-42a4-a683-e6c559706c47">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="DatasetEvolution" uuid="fac084d2-fcf3-44a7-a4ae-6b76f2193bc1">
+						<datasetParameter name="XML_DATA_DOCUMENT">
+							<datasetParameterExpression><![CDATA[$P{XML_DATA_DOCUMENT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{XML_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_FILE">
+							<datasetParameterExpression><![CDATA[$P{XML_FILE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.xml.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.xml.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_DATE_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_DATE_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_NUMBER_PATTERN">
+							<datasetParameterExpression><![CDATA[$P{XML_NUMBER_PATTERN}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{XML_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="XML_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{XML_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/financialDebt/cirbe/evolution/item")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="56" uuid="11f1f292-86d3-4798-a233-951918e1dcee">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="56" height="10" uuid="10540158-e828-43b4-84d7-8924d6aef8b6"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{evolution_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="15f0c76d-8d3f-47cc-827d-7bf2d156ea18">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="071c4ab4-d420-457e-b2f0-9d5339c2ca0d">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{discount}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="4d69a700-fa73-4406-b100-65f6150f10de">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="54b18268-8d01-4260-99d7-d33f6c26575e"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{limit}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="0b3ae38e-8051-47da-972c-728d334a30e3">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="e44a8983-4ead-463a-9be2-e740976e0289"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{daysLessYear}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="42f9e1c7-a245-4661-a90a-4ab9e5927173">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="1b25890c-25a1-43b9-9a6b-fb14dce6febd"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{daysMoreYear}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="6a9b4bd3-5f8d-4e11-98f2-524c9b791f9c">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="62195f29-ad16-468d-b8c6-b73ce7cc5d45"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="2042f593-5698-4b93-8fa2-60492a1ce27d">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="12136125-0b71-4186-a52a-478a541ab2fd"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{percentage}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="0f2d59e4-1bb5-478b-ac35-915c0866e358">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="7a8c2c16-1515-4a66-9625-3d10e2712726"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{guarantee}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="8befa622-3474-4b72-9c6a-449ca2eb99d9">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="7d720435-dd7a-4a5d-8e50-208bd42d2071"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{leasFactori}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="f1b5350c-a39f-444e-8e3c-472d9061545f">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="cf8e720d-3f62-4c51-9a3a-ac4590999767"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{defaulter}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="8f265750-a75d-43ad-bfd3-cced203ae857">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="dd8e05e2-3732-4b1d-84d4-c2d01103e510"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{direct}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="b9671365-dc29-4459-b4f0-a5f1d4b28fec">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="3dfe876d-8040-41eb-a598-2273ad198787"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{indirect}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="9c877b86-a01d-4b5e-896a-b6057ea4b8bb">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="8e73da8f-f9a7-4af0-8cd6-e5a605f1ff24"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{real}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="236f79ed-21a8-4e76-b141-8b0078077e4f">
+						<jr:detailCell style="Table_TD" height="10">
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="38" height="10" uuid="dee850f6-8462-4d12-8042-b1714ee6aa6d"/>
+								<box topPadding="0" leftPadding="2" bottomPadding="0" rightPadding="2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{formal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="1" y="150" width="56" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="f4890456-3737-45ce-b81c-dfa5992dbd2d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="57" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="41aa2bdf-4d20-4110-b592-98eb15b7802d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="57" y="130" width="38" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="a58a56cf-8586-4f50-bcb1-f9ad85e0eb8e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.dscto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="95" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="cd9144df-bb23-4c37-aeb3-3911090dcf9e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.limite}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="133" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="9f3ef43c-cf97-4eb7-aa6d-775294e6720d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.disMenor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="171" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="9a535a2a-4111-4220-9a23-11630fc450a7">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.dismayor}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="209" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="d7f3714a-f964-4a9a-be58-f4782479e975">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.total}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="247" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="fab9564a-6a48-4a8e-a894-7ab66ddf73b2">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.util}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="285" y="130" width="38" height="42" forecolor="#FFFFFF" backcolor="#808080" uuid="aa9ea3ce-cec5-4062-8816-ea43941f7f7f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.avales}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="95" y="130" width="190" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="3e91b7da-9f92-4cb5-a78a-50c2004c01e8">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.creditosYprestamos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="323" y="130" width="38" height="42" forecolor="#FFFFFF" backcolor="#808080" uuid="253f4c79-f61b-467a-8dc2-abce026c84d2">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.leas}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="361" y="130" width="38" height="42" forecolor="#FFFFFF" backcolor="#808080" uuid="7b96510c-6235-49ac-9fb7-c7899c26592b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.moroso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="399" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="9e1acb71-577c-450a-b330-fd89cbcf3202">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.directo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="437" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="29a89126-e503-4fec-8917-ce82762bdd6b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.indirecto}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="475" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="d6383ecd-d6b4-4518-b7df-d3c49d9f451b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.real}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="513" y="150" width="38" height="22" forecolor="#FFFFFF" backcolor="#808080" uuid="ff89c65e-5fc9-48a0-98e0-8669dd8335f3">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.formal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="399" y="130" width="76" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="e2fedb37-927e-439c-b527-ce59cb5d2c7d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.riesgo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="475" y="130" width="76" height="20" forecolor="#FFFFFF" backcolor="#808080" uuid="8123ab3f-8673-4de3-921f-4f4a66865af2">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.cirbe.garantia}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

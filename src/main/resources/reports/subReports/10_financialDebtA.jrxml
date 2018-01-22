@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relevantClientInformationSubReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="0" resourceBundle="I18n" uuid="c4ba3a6c-1d74-4994-97f5-72acd4fcc205">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#808080">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset" uuid="36f924e7-358b-437e-b660-3a1c2a20d707">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapterPROA"/>
+		<parameter name="bankPoolDate" class="java.math.BigDecimal"/>
+		<parameter name="entityTotal" class="java.lang.String"/>
+		<parameter name="commercialRoleTotal" class="java.math.BigDecimal"/>
+		<parameter name="factoringTotal" class="java.math.BigDecimal"/>
+		<parameter name="financialCPTotal" class="java.math.BigDecimal"/>
+		<parameter name="confirmingTotal" class="java.math.BigDecimal"/>
+		<parameter name="totalCPTotal" class="java.math.BigDecimal"/>
+		<parameter name="financialLPTotal" class="java.math.BigDecimal"/>
+		<parameter name="riskSignatureTotal" class="java.math.BigDecimal"/>
+		<parameter name="othersTotal" class="java.math.BigDecimal"/>
+		<parameter name="total" class="java.math.BigDecimal"/>
+		<parameter name="percentageTotal" class="java.math.BigDecimal"/>
+		<queryString language="xPath">
+			<![CDATA[/proa/financialDebt/bankPool/item]]>
+		</queryString>
+		<field name="entity_1" class="java.lang.String">
+			<fieldDescription><![CDATA[entity]]></fieldDescription>
+		</field>
+		<field name="factoring_1" class="java.lang.String">
+			<fieldDescription><![CDATA[factoring]]></fieldDescription>
+		</field>
+		<field name="commercialRole_1" class="java.lang.String">
+			<fieldDescription><![CDATA[commercialRole]]></fieldDescription>
+		</field>
+		<field name="financialCP_1" class="java.lang.String">
+			<fieldDescription><![CDATA[financialCP]]></fieldDescription>
+		</field>
+		<field name="confirming_1" class="java.lang.String">
+			<fieldDescription><![CDATA[confirming]]></fieldDescription>
+		</field>
+		<field name="totalCP_1" class="java.lang.String">
+			<fieldDescription><![CDATA[totalCP]]></fieldDescription>
+		</field>
+		<field name="financialLP_1" class="java.lang.String">
+			<fieldDescription><![CDATA[financialLP]]></fieldDescription>
+		</field>
+		<field name="riskSignature_1" class="java.lang.String">
+			<fieldDescription><![CDATA[riskSignature]]></fieldDescription>
+		</field>
+		<field name="others_1" class="java.lang.String">
+			<fieldDescription><![CDATA[others]]></fieldDescription>
+		</field>
+		<field name="total_1" class="java.lang.String">
+			<fieldDescription><![CDATA[total]]></fieldDescription>
+		</field>
+		<field name="percentage_1" class="java.lang.String">
+			<fieldDescription><![CDATA[percentage]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="xPath">
+		<![CDATA[/proa/financialDebt/bankPool]]>
+	</queryString>
+	<field name="bankPoolDate" class="java.lang.String">
+		<fieldDescription><![CDATA[bankPoolDate]]></fieldDescription>
+	</field>
+	<field name="entityTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[entityTotal]]></fieldDescription>
+	</field>
+	<field name="commercialRoleTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[commercialRoleTotal]]></fieldDescription>
+	</field>
+	<field name="factoringTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[factoringTotal]]></fieldDescription>
+	</field>
+	<field name="financialCPTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[financialCPTotal]]></fieldDescription>
+	</field>
+	<field name="confirmingTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[confirmingTotal]]></fieldDescription>
+	</field>
+	<field name="totalCPTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[totalCPTotal]]></fieldDescription>
+	</field>
+	<field name="financialLPTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[financialLPTotal]]></fieldDescription>
+	</field>
+	<field name="riskSignatureTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[riskSignatureTotal]]></fieldDescription>
+	</field>
+	<field name="othersTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[othersTotal]]></fieldDescription>
+	</field>
+	<field name="total" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[total]]></fieldDescription>
+	</field>
+	<field name="percentageTotal" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[percentageTotal]]></fieldDescription>
+	</field>
+	<field name="textUnderTable" class="java.lang.String">
+		<fieldDescription><![CDATA[textUnderTable]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="140">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="0" width="340" height="20" uuid="f4163ef3-70fb-4242-9035-4aa821be0a8a">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.tituloA}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="35" width="544" height="1" uuid="60c60a00-8ff5-4ab1-b0c6-8eedb30799b5">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="20" width="230" height="20" uuid="0f28a6d7-1e96-4aee-a5e6-8a58b67c34f7">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.tituloPoolBanc}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="1" y="70" width="549" height="29" uuid="ae466323-fb78-45f4-8f9f-176cc552bd74">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset" uuid="f2d23feb-8b5c-4965-8d68-d19255a1c73e">
+						<datasetParameter name="bankPoolDate">
+							<datasetParameterExpression><![CDATA[$F{bankPoolDate}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="commercialRoleTotal">
+							<datasetParameterExpression><![CDATA[$F{commercialRoleTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="confirmingTotal">
+							<datasetParameterExpression><![CDATA[$F{confirmingTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="entityTotal">
+							<datasetParameterExpression><![CDATA[$F{entityTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="factoringTotal">
+							<datasetParameterExpression><![CDATA[$F{factoringTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="financialCPTotal">
+							<datasetParameterExpression><![CDATA[$F{financialCPTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="financialLPTotal">
+							<datasetParameterExpression><![CDATA[$F{financialLPTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="othersTotal">
+							<datasetParameterExpression><![CDATA[$F{othersTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="percentageTotal">
+							<datasetParameterExpression><![CDATA[$F{percentageTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="riskSignatureTotal">
+							<datasetParameterExpression><![CDATA[$F{riskSignatureTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="total">
+							<datasetParameterExpression><![CDATA[$F{total}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="totalCPTotal">
+							<datasetParameterExpression><![CDATA[$F{totalCPTotal}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JRXmlDataSource)$P{REPORT_DATA_SOURCE}).dataSource("proa/financialDebt/bankPool/item")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="7e93c044-30fa-4dfc-aee4-6ec7a75e0678">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="90" height="10" forecolor="#FFFFFF" uuid="75dd5d16-8d75-4152-bf14-e9b81a9e2099"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.entidad}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="90" height="10" forecolor="#FFFFFF" uuid="b309149b-df08-4805-bf8b-ca7fb755fd8c"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{entityTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="90" height="10" uuid="27569000-6fe7-4a94-869c-a75bcc48372f"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{entity_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="bd641718-af5e-427d-9de3-6a886393584d">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="7bb51a34-a4f1-43ac-8bf6-a6ebcf030e4c"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.papelComercial}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="2298642b-3c93-403f-901a-ddaab6b307fe"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{commercialRoleTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" uuid="bfbea6c5-0bd2-4b1e-a1b6-77e91e16b079"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{factoring_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="f91b62e9-751e-408c-be65-5e02525dd433">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="4d7eb8f3-f410-4109-8bdb-e48f4cc3b667"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.factoring}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="e769be0f-aa7d-49a1-888e-55c0ab7b7373"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{factoringTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" uuid="a60460c8-3a0e-427f-a184-d99838a5b0f5"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{commercialRole_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="c60897c7-243c-4f2e-b80b-30412b64c8eb">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="162096ab-82f7-4ab9-b312-7facb205a58c"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.financiacion_cp}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="9ca3edbd-6b10-48b8-bd5c-9045b812b6eb"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{financialCPTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" uuid="ded43c97-a0bb-4bb1-a122-6423ea50cbe8"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{financialCP_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="31edfb03-30df-4aee-9cb0-4fc274eaee2f">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="319b64bc-d740-4165-a286-88a85ed151cd"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.confirming}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="62074061-cc59-43e8-ae59-216f8df46016"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{confirmingTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" uuid="4cf7016c-6f80-4866-b717-94212add6d88"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{confirming_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="357841aa-0179-4627-80d7-43d68ec84867">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="dbfe9a16-930a-4d55-9aad-d5d1727eb42d"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.total_cp}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="3dd7f94e-2fbd-48cb-ad20-6dd61cb1d401"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{totalCPTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" uuid="647ab76e-5533-4693-8d13-caf741206438"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{totalCP_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="543ae85c-54b6-429c-901f-6a41d456e4e7">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="dac7e2e2-fa24-4dff-803d-05fa43cdf579"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.financiacion_ip}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="53820d5e-62cb-4fa0-899e-408c2f7e583b"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{financialLPTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" uuid="909daba7-c069-4175-a31d-5e4561c94ffb"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{financialLP_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="d9c25802-d950-4edb-8fd9-9f15267d8124">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="042a59e8-660b-4671-b364-f8c3276f731d"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.riesgosFirma}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" forecolor="#FFFFFF" uuid="6dfb79a4-3256-488d-8203-c7184f66be09"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{riskSignatureTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="50" height="10" uuid="014923d5-7ac7-437f-a488-b780ff6ca172"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{riskSignature_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="913136ad-6cac-4153-a545-86bad1b53e02">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="10" forecolor="#FFFFFF" uuid="0e483b0e-e7aa-4715-989b-d537cd02908b"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.otros}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="10" forecolor="#FFFFFF" uuid="52d204bd-521e-46ff-b331-3241f012bc61"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{othersTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="10" uuid="e1718a19-7fc0-4a1b-ba30-b17f039874d3"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{others_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="40" uuid="87c43e5c-df9a-4496-9628-ef2fafe25b2a">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="40" height="10" forecolor="#FFFFFF" uuid="464cb176-eb2f-4e37-aeea-df4f9143dd35"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.total}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="10" forecolor="#FFFFFF" uuid="c7c7e195-6d5d-42ab-99c9-3039c2ab0ebf"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="40" height="10" uuid="948395fc-2948-4a06-b7af-91ac83020221"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{total_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="30" uuid="73b55a69-6aef-41c3-bcf0-61cc11b69a46">
+						<jr:columnHeader style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="30" height="10" forecolor="#FFFFFF" uuid="d1c05ef7-1355-4e1e-b33a-77c1f32a90f0"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$R{Report.PROA.deudaFinenciera.porcentaje}]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="10">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="30" height="10" forecolor="#FFFFFF" uuid="37adc752-7dc4-432c-a67d-96f0a4de70ff"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$P{percentageTotal}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="Table_TD" height="10">
+							<box>
+								<pen lineWidth="0.5"/>
+							</box>
+							<textField pattern="#,##0.###" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="30" height="10" uuid="87307017-28f4-4dd7-b274-1ca73735c107"/>
+								<box>
+									<pen lineWidth="0.5"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{percentage_1} + "%"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="1" y="60" width="550" height="10" forecolor="#FFFFFF" backcolor="#808080" uuid="cb980ede-cec7-4483-866a-296d18746057">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="7.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.AccesoCredito.endeudamientoBancario.tablaEndeudamientoBancario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="40" width="230" height="10" uuid="b6b64967-6dc0-449d-aabe-288792e123ca"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$R{Report.PROA.AccesoCredito.endeudamientoBancario.tablaEndeudamientoBancario.fecha} + $F{bankPoolDate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="110" width="544" height="20" uuid="740b920b-14d1-4285-9928-8889f6e1146a">
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="8"/>
+					<paragraph firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textUnderTable}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
